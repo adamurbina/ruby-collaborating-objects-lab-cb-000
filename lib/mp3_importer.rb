@@ -7,9 +7,9 @@ class MP3Importer
     def files
         @files = []
         Dir.entries(@path).each{|file|
-            @files << file if file.ends_with(".mp3")
+            @files << file if file.end_with?(".mp3")
         }
         @files
     end
-    
+
 end
