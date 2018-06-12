@@ -12,11 +12,12 @@ class Song
         song_data = file_name.split(" - ")
         puts song_data
         song_artist = song_data[0]
-        puts(song_artist)
+        puts("song artist: #{song_artist}")
         song_title = song_data[1]
-        puts(song_title)
+        puts("song title: #{song_title}")
 
         new_instance = Song.new(song_title)
+        puts ("new instance name: #{new_instance.name}")
         artist = Artist.find_or_create_by_name(song_artist)
         new_instance.artist = artist
     end
