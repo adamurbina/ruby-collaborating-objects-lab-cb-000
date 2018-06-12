@@ -17,6 +17,7 @@ class Song
         #puts("new song name: #{new_song.name}")
         new_artist = Artist.find_or_create_by_name(song_artist)
         new_song.artist = new_artist
+        return new_song.name
         #puts("new song name2: #{new_song.name}")
     end
 end
