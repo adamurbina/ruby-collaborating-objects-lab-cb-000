@@ -14,4 +14,10 @@ class MP3Importer
         @files
     end
 
+    def import
+        files.each{ |file|
+            
+        }
+    end
+
 end
