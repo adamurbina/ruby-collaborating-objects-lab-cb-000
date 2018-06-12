@@ -17,8 +17,9 @@ class Song
         puts("song title: #{song_title}")
 
         new_instance = Song.new(song_title)
-        puts ("new instance name: #{new_instance.name}")
+        puts ("new instance name1: #{new_instance.name}")
         artist = Artist.find_or_create_by_name(song_artist)
+        puts ("new instance name2: #{new_instance.name}")
         new_instance.artist = artist
     end
 end
