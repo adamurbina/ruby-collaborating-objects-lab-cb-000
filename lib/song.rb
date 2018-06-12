@@ -27,7 +27,7 @@ song_artist = song_data[0]
 puts ("song_artist #{song_artist}")
 song_title = song_data[1]
 puts ("song_title #{song_title}")
-
+puts("-------")
 
 new_song = Song.new_by_filename(filename)
 puts ("song name: #{new_song.name}")
