@@ -14,7 +14,7 @@ class Song
         song_title = song_data[1]
 
         new_song = Song.new(song_title)
-        artist = Artist.find_or_create_by_name(song_artist)
-        new_song.artist = artist
+        new_artist = Artist.find_or_create_by_name(song_artist)
+        new_song.artist = new_artist
     end
 end
