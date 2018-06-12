@@ -1,4 +1,4 @@
-require artsit.rb
+require_relative artist
 
 class Song
 
