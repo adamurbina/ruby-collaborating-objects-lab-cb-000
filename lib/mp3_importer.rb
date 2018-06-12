@@ -21,6 +21,7 @@ class MP3Importer
             song = Song.new_by_filename(file)
         }
         puts Artist.all.count
+        puts Artist.all.first.songs
     end
 
 end
