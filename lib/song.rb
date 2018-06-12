@@ -16,11 +16,11 @@ class Song
         song_title = song_data[1]
         #puts("song title: #{song_title}")
 
-        new_instance = Song.new(song_title)
+        new_song = Song.new(song_title)
         #puts ("new instance name1: #{new_instance.name}")
         artist = Artist.find_or_create_by_name(song_artist)
         #puts ("new instance name2: #{new_instance.name}")
-        new_instance.artist = artist
+        new_song.artist = artist
         #puts ("new instance artist: #{new_instance.artist.name}")
     end
 end
