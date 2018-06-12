@@ -21,13 +21,15 @@ end
 
 filename = 'Michael Jackson - Black or White - pop.mp3'
 
-new_song = Song.new_by_filename(filename)
+
 song_data = filename.split(" - ")
 song_artist = song_data[0]
 puts ("song_artist #{song_artist}")
 song_title = song_data[1]
-puts ("song_artist #{song_title}")
+puts ("song_title #{song_title}")
 
+
+new_song = Song.new_by_filename(filename)
 puts ("song name: #{new_song.name}")
 puts ("song name: #{new_song.artist}")
 puts ("song name: #{new_song.artist.name}")
