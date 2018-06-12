@@ -1,3 +1,5 @@
+require artsit.rb
+
 class Song
 
     attr_accessor :name, :artist
