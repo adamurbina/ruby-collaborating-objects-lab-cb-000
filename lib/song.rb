@@ -23,6 +23,6 @@ filename = 'Michael Jackson - Black or White - pop.mp3'
 
 new_song = Song.new_by_filename(filename)
 
-puts new_song.name
+puts ("song name: #{new_song.name}")
 puts new_song.artist
 puts new_song.artist.name
