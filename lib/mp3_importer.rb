@@ -18,7 +18,7 @@ class MP3Importer
         files
         @files.each{ |file|
             song = Song.new_by_filename(file)
-            puts song.name
+            puts Artist.all
         }
     end
 
