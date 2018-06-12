@@ -24,6 +24,7 @@ class Artist
                 return artist
             end}
         self.new(name)
+        save
     end
 
     def print_songs
