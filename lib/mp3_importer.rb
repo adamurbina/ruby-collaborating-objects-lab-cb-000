@@ -20,7 +20,7 @@ class MP3Importer
         @files.each{ |file|
             song = Song.new_by_filename(file)
         }
-        Artist.all.count
+        puts Artist.all.count
     end
 
 end
