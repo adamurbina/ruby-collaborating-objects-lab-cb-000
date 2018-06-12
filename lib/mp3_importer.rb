@@ -16,12 +16,9 @@ class MP3Importer
 
     def import
         files
-        puts files
         @files.each{ |file|
             song = Song.new_by_filename(file)
         }
-        puts Artist.all.count
-        puts Artist.all.first.songs
     end
 
 end
